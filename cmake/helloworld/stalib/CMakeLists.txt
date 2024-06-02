@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.12)
+project(stalib VERSION 1.0 LANGUAGES C CXX)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
+aux_source_directory(. SOURCES)
+add_library(stalib STATIC ${SOURCES})
